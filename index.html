@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/3781f4751f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="multirange.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu-top">
+                <li>
+                    <a href="#"><i class="fas fa-phone"></i>+374 94 055 666</a>
+                </li>
+                <li>
+                    <a class="subskribe" href="#"><i class="far fa-envelope"></i>Subskribe</a>
+                </li>
+                <li>
+                    <a class="user" href="#"><i class="far fa-user"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                    <img class="flag" src="./img/flag.png" alt="">
+                    <div class="dropdown-content">
+                        <img src="" alt="">
+                      </div>
+                </li>
+                
+            </ul>
+        </nav>
+        <nav>
+            <ul class="menu-bottom">
+                <li>
+                    <a class="logo" href="#">Logo</a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Automotive Department</a>
+                </li>
+                <li>
+                    <a href="#">Industrial department</a>
+                </li>
+                <li>
+                    <a href="#">Company</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Media</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Dictionarys</a>
+                </li>
+                <li>
+                    <button onclick="searchShow()"><i class="fa fa-search"></i></button>
+                    <form action="">
+                        <input id="search" type="text" placeholder="Search.." name="search">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="intro-img">
+                <div class="intro-header">
+                    <h1>The world in motion</h1>
+                </div>
+                <div class="intro-text ">
+                <p>
+         We strive for excellence in our customer service. Our team will get you
+where you <br> need to go Whether it's to the shopping outlet malls or theme parks. <br>
+Let us know how many people are in your party.  We hope that we can be of <br>
+service to you regardless how far. We travel far and near.  </p>
+</div>
+                <div class="intro-button">
+                    <button >ABOUT ROLMAN WORLD</button>
+                </div>
+            </div>
+            <div class="intro-form wrapper">
+                <form action="">
+                    <div class="form-control">
+                        <label for="make">Select Make</label>
+                        <input type="text" id="make" placeholder="Make">
+                    </div>
+                    <div class="form-control">
+                        <label for="model">Select Model</label>
+                        <input type="text" id="model" placeholder="Model">
+                    </div>
+                    <div class="form-control">
+                        <label for="year">Select Year</label>
+                        <input type="text" id="year" placeholder="Year">
+                    </div>
+                    <div class="form-control range">
+                        <label for="price">Price Range</label>
+                        <span>$400 - $4000</span>
+                        <input type="range" multiple value="400, 4000" min="400" max="4000" step="100" />
+                    </div>
+                    <div class="form-control">
+                        <label for="status">Select vehicle status</label>
+                        <input type="text" id="status" placeholder="Vehicle status">
+                    </div>
+                    <div class="form-control">
+                        <label for="body-style">Select body style</label>
+                        <input type="text" id="body-style" placeholder="Body style">
+                    </div>
+                    <div class="form-control">
+                        <input type="submit"  value="Search the Vechicle">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="service">
+            <div class="wrapper service-container">
+                <div class="service-text">
+                    <h2>WELCOME TO <span>CAR SERVICE</span></h2>
+                    <p>We strive for excellence in our customer service. Our team will get you <br>
+                        where you need to go Whether it's to the shopping outlet malls or theme parks. <br>
+                        Let us know how many people are in your party. We hope that we can be of <br>
+                        service to you regardless how far. We travel far and near. </p>
+                </div>
+                <div class="service-cards">
+                    <div class="card">
+                        <img src="./img/1.jpg" alt="">
+                        <h4>ALL BRENDS</h4>
+                        <p>We strive for excellence in
+                            our customer service.
+                            Our team will get you where you
+                            need to go Whether it's to .</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/2.jpg" alt="">
+                        <h4>ALL BRENDS</h4>
+                        <p>We strive for excellence in
+                            our customer service.
+                            Our team will get you where you
+                            need to go Whether it's to .</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/3.jpg" alt="">
+                        <h4>ALL BRENDS</h4>
+                        <p>We strive for excellence in
+                            our customer service.
+                            Our team will get you where you
+                            need to go Whether it's to .</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/4.jpg" alt="">
+                        <h4>ALL BRENDS</h4>
+                        <p>We strive for excellence in
+                            our customer service.
+                            Our team will get you where you
+                            need to go Whether it's to .</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products wrapper">
+            <div class="product-header">
+                <h2>PRODUCTS</h2>
+            </div>
+            <div class="products-slide">
+                <div class="product-card">
+                    <div class="card-content">
+                        <img src="./img/product1.jpg" alt="">
+                        <div class="card-head">
+                            <h4>Disk Wheel</h4>
+                            <p>65.00 $</p>
+                        </div>
+                    </div>
+                    <div class="button-see-more">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-content">
+                        <img src="./img/product2.jpg" alt="">
+                        <div class="card-head">
+                            <h4>Bearing</h4>
+                            <p><del>65.00 $ </del></p>
+                            <p class="price-red">55.00 $</p>
+                        </div>
+                    </div>
+                    <div class="button-see-more">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-content">
+                        <img src="./img/product3.jpg" alt="">
+                        <div class="card-head">
+                            <h4>Bearing</h4>
+                            <p>65.00 $</p>
+                        </div>
+                    </div>
+                    <div class="button-see-more">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-content">
+                        <img src="./img/product3.jpg" alt="">
+                        <div class="card-head">
+                            <h4>Bearing</h4>
+                            <p>65.00 $</p>
+                        </div>
+                    </div>
+                    <div class="button-see-more">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-popular">
+                <h2>Popular parts for <span>your car </span></h2>
+                <p>View a selection of our most popular car parts
+                </p>
+            </div>
+            <div class="popular-cards">
+                <div class="popular-card">
+                    <img src="./img/popular-pic1.jpg" alt="">
+                    <h3>ACCESSORIES</h3>
+                    <ul>
+                        <li>Car care kits <i class="fas fa-angle-down"></i></li>
+                        <li>Car Freshener <i class="fas fa-angle-down"></i></li>
+                        <li>Light bulbs <i class="fas fa-angle-down"></i></li>
+                        <li>Windshield wiper  <i class="fas fa-angle-down"></i></li>
+                    </ul>
+                </div>
+                <div class="popular-card">
+                    <img src="./img/popular-pic2.jpg" alt="">
+                    <h3>BODY PARTS</h3>
+                    <ul>
+                        <li>Shock Absorber <i class="fas fa-angle-down"></i></li>
+                        <li>Drive shaft <i class="fas fa-angle-down"></i></li>
+                        <li>Hub bearing <i class="fas fa-angle-down"></i></li>
+                        <li>Shock Absorber  <i class="fas fa-angle-down"></i></li>
+                    </ul>
+                </div>
+                <div class="popular-card">
+                    <img src="./img/populiar-pic3.jpg" alt="">
+                    <h3>BRAKE DISCS PADS</h3>
+                    <ul>
+                        <li>Brake pads <i class="fas fa-angle-down"></i></li>
+                    </ul>
+                </div>
+                <div class="popular-card">
+                    <img src="./img/product3.jpg" alt="" height="130px">
+                    <h3>DEMO CATEGORY</h3>
+                    <ul>
+                        <li>Demo sub category <i class="fas fa-angle-down"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="products-new-arrivals">
+                <div class="new-arrivals-header">
+                    <h2><span>Popular</span> New Arrivals </h2>
+                </div>
+                <div class="new-arrivals-cards">
+                    <div class="new-arrivals-card">
+                        <img src="./img/Antenna .jpg" alt="">
+                        <div class="circl-price">
+                            65.00$
+                        </div>
+                        <h3>Antenna</h3>
+                        <div class="button-see-more new-arrivals-see-more">
+                            <button>SEE MORE</button>
+                        </div>
+                    </div>
+                    <div class="new-arrivals-card">
+                        <img src="./img/Shock Absorber.jpg" alt="">
+                        <div class="circl-price red-price">
+                            <p>
+                                <del> <small> 65.00$</small></del>
+                                <span>65.00$</span>
+                        </p>
+                        </div>
+                        <h3>Shock Absorber</h3>
+                        <div class="button-see-more new-arrivals-see-more">
+                            <button>SEE MORE</button>
+                        </div>
+                    </div>
+                    <div class="new-arrivals-card">
+                        <img src="./img/Reflector.jpg" alt="">
+                        <div class="circl-price">
+                            65.00$
+                        </div>
+                        <h3>Reflector</h3>
+                        <div class="button-see-more  new-arrivals-see-more">
+                            <button>SEE MORE</button>
+                        </div>
+                    </div>
+                    <div class="new-arrivals-card">
+                        <img src="./img/Speaker.jpg" alt="">
+                        <div class="circl-price red-price">
+                            <p>
+                                <del> <small> 65.00$</small></del>
+                                <span>65.00$</span>
+                        </p>
+                        </div>
+                        <h3>Speaker</h3>
+                        <div class="button-see-more new-arrivals-see-more">
+                            <button>SEE MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="partners wrapper">
+            <div class="partners-header">
+                <h2><span>Our partners</span> Brends</h2>
+            </div>
+            <div class="partner-slider">
+                <div class="partner-slide">
+                    <img src="./img/brand1.jpg" alt="">
+                    <img src="./img/brand2.jpg" alt="">
+                    <img src="./img/brand3.jpg" alt="">
+                    <img src="./img/brand4.jpg" alt="">
+                    <img src="./img/brand5.jpg" alt="">
+                    <img src="./img/brand6.jpg" alt="">
+                    <img src="./img/brand7.jpg" alt="">
+                    <img src="./img/brand8.jpg" alt="">
+                    <img src="./img/brand1.jpg" alt="">
+                    <img src="./img/brand2.jpg" alt="">
+                </div>
+                <div class="partner-slide">
+                    <img src="./img/brand1.jpg" alt="">
+                    <img src="./img/brand2.jpg" alt="">
+                    <img src="./img/brand3.jpg" alt="">
+                    <img src="./img/brand4.jpg" alt="">
+                    <img src="./img/brand5.jpg" alt="">
+                    <img src="./img/brand6.jpg" alt="">
+                    <img src="./img/brand7.jpg" alt="">
+                    <img src="./img/brand8.jpg" alt="">
+                    <img src="./img/brand1.jpg" alt="">
+                    <img src="./img/brand2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563646.207089582!2d43.917442963314954!3d40.053179080876674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40155684e773bac7%3A0xd0b4757aeb822d23!2z0JDRgNC80LXQvdC40Y8!5e0!3m2!1sru!2s!4v1590146899131!5m2!1sru!2s" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper footer-block">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    Logo
+                </div>
+                <div class="footer-about">
+                    <h3>ABOUT US</h3>
+                    <p>CGN is a company specialized in all kinds of bearings. With a
+                        footprint in many countries, we are strategically located in
+                        Armneia, UAE to cater to the world. We’re focused on building
+                        strong and long-term relationships to the highest ethical
+                        standards. Our objective is to bring more values than expected
+                        in the midst of new changes now taking place globally.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>CONTACTS</h3>
+                    <ul>
+                        <li> <i class="far fa-clock"></i> Mon. - Sun. <br> 9:00 am - 17:00 pm</li>
+                        <li><i class="fa fa-envelope-open-o"></i> Cgnarmenia@gmail.com</li>
+                        <li><i class="fa fa-phone"></i>+374 94 055 666</li>
+                        <li><i class="fab fa-youtube-square"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-linkedin"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <ul>
+                    <li>Automoti department</li>
+                    <li>Industrial departament</li>
+                    <li>Company</li>
+                    <li>Products</li>
+                    <li>Media</li>
+                    <li>News</li>
+                    <li>Contact Us</li>
+                    <li>Dictionary</li>
+                </ul>
+                <ul>
+                    <li>Industrial departament</li>
+                    <li>Spherical bearing</li>
+                    <li>Pillow block bearing</li>
+                    <li>Tapered roller bearing</li>
+                    <li>Industrial bearing</li>
+                </ul>
+                <ul>
+                    <li>Media</li>
+                    <li>News</li>
+                    <li>Downloads</li>
+                    <li>Gallery</li>
+                    <li>Newsletter & Social Media</li>
+                </ul>
+                <ul>
+                    <li>Company</li>
+                    <li>Products</li>
+                    <li>Brands</li>
+                    <li>Divisions</li>
+                    <li>Automative Trade</li>
+                    <li>Indrustrial trade</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="multirange.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+<script src="./script.js"></script>
+</html>
